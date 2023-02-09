@@ -1,0 +1,379 @@
+:root {
+    --my-red: #be3144;
+    --my-blue: #45567D;
+    --my-white: #f0f0f0;
+    --my-gray: #303841;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*START HEADER SECTION*/
+ header {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--my-red);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    
+    
+   
+ }
+#navbar {
+    width: 50%;
+    height: 10vh;
+    position: fixed;
+    margin: 0px;
+    top: 0;
+    right: 20px;
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: absolute;
+    margin: auto;
+    right: 50px;
+   
+   
+}
+
+.nav-list>li>a {
+    font-size: 2rem;
+    color: var(--my-white);
+    font-family: Raleway, sans-serif;
+    transition: color 0.3s ease-out;
+    
+}
+
+.nav-list>li>a:hover {
+    color: var(--my-gray);
+}
+
+.list {
+    margin-right: 30px;
+}
+
+a {
+    text-decoration: none;
+    
+}
+/*END HEADER SECTION*/
+
+/* START OF WELCOME-SECTION */
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-image: linear-gradient(90deg,#3d3a40 10%,#181719 100%);
+}
+
+.welcome-section h1 {
+    color: var(--my-white);
+}
+.welcome-section p {
+    color: var(--my-red);
+    font-family: poppins, sans-serif;
+}
+
+/* END OF WELCOME-SECTION */
+
+/* START OF PROJECT-SECTION */
+
+#projects {
+    width: 100%;
+    background: var(--my-blue);
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+    padding-bottom: 100px;
+}
+
+#projects h2 {
+    text-align: center;
+    width: 90%;
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 35px 0;
+    position: absolute;
+    color: var(--my-white);
+    display: flex;
+    border-bottom: 4px solid var(--my-white);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: var(--my-white);
+    
+   
+
+}
+
+.grid {
+    width: 80%;
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(320px,1fr));
+    grid-auto-rows: 400px;
+    grid-gap: 4rem;
+    max-width: 1600px;
+    
+    
+}
+
+.grid>a>div, .grid>a {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+.img-project {
+    width: 100%;
+    height: calc(100% - 3rem); 
+    object-fit: cover;
+    display:block;
+
+}
+
+.project-title {
+    margin: 0;
+    height: 3rem;
+    background-color: var(--my-gray);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--my-white);
+}
+
+/*change color of ".code" when hovered over element "a" */
+.code {
+    color: var(--my-gray);
+    transition: color 0.3s ease-out;
+}
+
+
+a:hover .code {
+    color: var(--my-red); 
+}
+
+a {
+    color: var(--my-white);
+}
+
+#projects .btn {
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    background-color: var(--my-gray);
+    padding: 7px 7px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+
+.btn:hover {
+    color: var(--my-red);
+    border: 3px solid var(--my-red);
+}
+
+/* END OF PROJECT-SECTION */
+
+
+/* START OF CONTACT-SECTION */
+#contact {
+    background-color: var(--my-gray);
+    height: 100vh;
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#contact .contact-header {
+    font-size: 3rem;
+    font-family: 'Poppins',sans-serif;
+    color: var(--my-white);
+    text-align: center;
+    text-shadow: 1px 1px var(--my-red);
+}
+
+#contact .contact-header p {
+    font-size: 1.5rem;
+    font-family: 'Poppins',sans-serif;
+    color: var(--my-white);
+    text-align: center;
+    margin-top: -20px;
+}
+
+#contact .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+#contact .contact-links a {
+    font-size: 2rem;
+    font-family: 'Poppins',sans-serif;
+    border: none;
+    margin:10px auto;
+    transition: transform 0.3s ease-out;
+    
+}
+
+#contact .contact-links a:hover {
+    transform: translate(0,10px);
+}
+
+/* END OF CONTACT-SECTION */
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--my-gray);
+    font-size: 1.5rem;
+    border-top: 3px solid var(--my-red);
+}
+
+footer p {
+    display: inline;
+    width: 48%;
+    text-align: center;
+    color: var(--my-white);
+}
+
+footer a:hover {
+    color: var(--my-red);
+}
+
+
+/* Mobile responsive*/
+
+@media only screen and (max-width: 800px) {
+    #header {
+        width: 100%;
+        height: 10vh;
+        background-color: var(--my-red);
+        position: fixed;
+        top: 0;
+        z-index: 2;
+    }
+
+    .nav-list>li>a {
+        font-size: 1.2rem;
+    }
+
+    #navbar {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        min-width: 100px;
+    }
+
+    .nav-list {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: ceter;
+        align-items: center;
+        padding: 0;
+        right: 0;
+    }
+
+    #navbar li:last-of-type {
+        margin-right: 0px;
+    }
+    /*End of nav bar*/
+
+    #welcome-section {
+        font-size: 2rem;
+    }
+
+    #projects h2 {
+        font-size: 2rem;
+    }
+
+    .grid p {
+        font-size: 1.2rem;
+    }
+
+    /*End of projects*/
+
+    #contact .contact-header {
+        font-size: 3vh;
+    }
+
+    #contact .contact-links {
+        flex-direction: column;
+    }
+
+    .contact-links a {
+        width: 70%;
+        text-align: center;
+        border: 1px solid var(--my-red) !important;
+        padding: 1px;
+        margin-bottom: 1px;
+    }
+
+       
+}
+
+@media only screen and (max-width:821px) {
+    #contact .contact-links {
+        flex-direction: column;
+    }
+
+    .contact-links a {
+        width: 70%;
+        text-align: center;
+        border: 1px solid var(--my-red) !important;
+        padding: 1px;
+        margin-bottom: 1px;
+    }
+}
